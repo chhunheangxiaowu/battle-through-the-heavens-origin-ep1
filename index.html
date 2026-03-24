@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Battle Through The Heavens: Origin - KHMOVIESTREAMING</title>
+  
+  <!-- Video.js Core CSS + JS -->
+  <link href="https://unpkg.com/video.js@8.3.0/dist/video-js.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/video.js@8.3.0/dist/video.min.js"></script>
+  <!-- HLS support for m3u8 -->
+  <script src="https://unpkg.com/videojs-contrib-hls@5.15.0/dist/videojs-contrib-hls.min.js"></script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0f16;
+      font-family: 'Kantumruy Pro', 'Segoe UI', sans-serif;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* ===== MAIN WRAPPER - MATCHES SECOND DESIGN ===== */
+    .video-wrapper {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+      background: #0b1117;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 35px -10px rgba(0,0,0,0.5);
+    }
+
+    /* ===== VIDEO PLAYER AREA - STYLED LIKE SECOND DESIGN ===== */
+    .video-player {
+      position: relative;
+      width: 100%;
+      background: #000;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    /* Video.js custom styling to fit perfectly */
+    .video-js {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      display: block;
+      background-color: #000;
+    }
+
+    /* Big play button - styled like second design's play button */
+    .video-js .vjs-big-play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: rgba(250, 204, 21, 0.9);
+      border: none;
+      line-height: 80px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-js .vjs-big-play-button:hover {
+      background: #facc15;
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+      font-size: 38px;
+      line-height: 80px;
+      color: #000;
+      content: "\f101";
+      font-family: VideoJS;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Hide default Video.js big play button text/label */
+    .video-js .vjs-big-play-button .vjs-control-text {
+      display: none;
+    }
+
+    /* Title overlay - positioned like second design's poster title area */
+    .title-container {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .title-container h4 {
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      padding: 8px 24px;
+      border-radius: 40px;
+      color: #fff;
+      font-family: 'Kantumruy Pro', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border-left: 3px solid #facc15;
+      margin: 0;
+    }
+
+    /* Episode section (empty but keeps spacing if needed) - optional placeholder */
+    .episode-placeholder {
+      background: #0f1720;
+      padding: 16px;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.85rem;
+      border-top: 1px solid #1e2a3a;
+      font-family: 'Kantumruy Pro', sans-serif;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      body {
+        padding: 12px;
+      }
+      
+      .video-js .vjs-big-play-button {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+      }
+      
+      .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+        font-size: 28px;
+        line-height: 60px;
+      }
+      
+      .title-container h4 {
+        font-size: 0.9rem;
+        padding: 6px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title-container h4 {
+        font-size: 0.75rem;
+        padding: 4px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="video-wrapper">
+    <!-- VIDEO PLAYER - styled exactly like second design's .video-player -->
+    <div class="video-player">
+      <!-- Video.js element -->
+      <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls preload="auto" poster="https://i2.wp.com/luciferdonghua.in/wp-content/uploads/2022/07/battle-through-the-heavens-the-origin-lucifer-donghua.webp?resize=247,350">
+        <source src="https://raw.githubusercontent.com/ChhunheangXiaowu/Battle-Through-The-Heavens-Origin-EP1/refs/heads/main/Battle-Through-The-Heavens-Origin-EP1.m3u8" type="application/x-mpegURL">
+      </video>
+
+      <!-- Title overlay (floating above video) -->
+      <div class="title-container">
+        <h4>Battle Through The Heavens: Origin - EP 1</h4>
+      </div>
+    </div>
+    
+    <!-- Optional decorative footer (matches second design's vibe but no episode buttons) -->
+    <div class="episode-placeholder">
+      ⚡ KHMOVIESTREAMING | Premium  Streaming
+    </div>
+  </div>
+
+  <script>
+    // Initialize Video.js player with custom settings
+    var player = videojs('my_video_1', {
+      controls: true,
+      autoplay: false,
+      preload: 'auto',
+      fluid: true,
+      playbackRates: [0.5, 0.75, 1, 1.25, 1.5, 2],
+      controlBar: {
+        volumePanel: {
+          inline: false
+        }
+      }
+    });
+
+    // Optional: handle responsive title font size (as per your original logic)
+    function adjustTitleFont() {
+      var titleEl = document.querySelector('.title-container h4');
+      if (!titleEl) return;
+      
+      var width = window.innerWidth;
+      if (width < 385) {
+        titleEl.style.fontSize = '10px';
+      } else if (width < 485) {
+        titleEl.style.fontSize = '11px';
+      } else if (width < 585) {
+        titleEl.style.fontSize = '13px';
+      } else {
+        titleEl.style.fontSize = '18px';
+      }
+    }
+    
+    // Run on load and resize
+    window.addEventListener('load', adjustTitleFont);
+    window.addEventListener('resize', adjustTitleFont);
+    
+    // Optional: Auto-play attempt (some browsers restrict autoplay with audio)
+    // Uncomment if you want autoplay on load:
+    // player.ready(function() {
+    //   player.play();
+    // });
+    
+    console.log('Video.js player initialized | Drama player by DRAMASABAY.COM');
+  </script>
+</body>
+</html>
